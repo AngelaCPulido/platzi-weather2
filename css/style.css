@@ -1,0 +1,206 @@
+/* line 9, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 150%; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 14, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+  html {
+    font-size: 120%; }
+ }
+
+/* line 18, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+body {
+  padding: 0;
+  margin: 0; }
+
+/*
+* Reiniciamos el estilo de los botones para iOS
+*/
+/* line 28, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: none; }
+
+/*
+* Botones
+*/
+/* line 34, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.btn {
+  display: inline-block;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  background-color: #ff4842;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+  margin-left: 1px;
+  padding: 1em;
+  border-radius: 1px; }
+
+/**
+    * Nadie quiere un botón con texto subrayado cuando
+    * hacemos hover.
+    */
+/* line 57, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.btn:hover {
+  text-decoration: none; }
+
+/* line 61, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.btn:active, .btn:focus {
+  outline: none; }
+
+/*
+* Header Styles
+*/
+/* line 67, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.main-header {
+  text-align: center;
+  background-color: #16210b;
+  color: white;
+  padding: 8px;
+  margin: 0; }
+
+/* line 74, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.main-header h1 {
+  margin: 0;
+  word-wrap: break-all; }
+
+/* line 78, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.main-header h2 {
+  font-size: 1rem;
+  font-weight: normal; }
+
+/*@media screen and (orientation: landscape){
+        .main-header{
+            background-color: olive;
+        }
+    }*/
+/*
+* Módulo .search
+*/
+/* line 91, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  font-size: 3rem; }
+
+/* line 101, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.search__text {
+  width: 75%;
+  font-size: 1rem; }
+
+/*
+* Estilizamos el módulo de las cards, cada resumen de tiempo de
+* las ciudades
+*/
+/* line 110, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card {
+  position: relative;
+  position: relative;
+  height: 30vh;
+  width: 100vw;
+  background-color: #eaeaea;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 3px black;
+  padding: 0.5em;
+  font-family: "Megrim", cursive;
+  margin-bottom: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 129, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__title {
+  margin: 0;
+  text-align: center; }
+
+/* line 133, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__time {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 0; }
+
+/* line 138, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__time::after, .card__time::before {
+  content: " - "; }
+
+/* line 142, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__info {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  font-size: 0.7rem;
+  text-align: center; }
+
+/* line 149, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__image {
+  display: block; }
+
+/* line 152, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__maxt {
+  color: #37b948;
+  text-shadow: none; }
+
+/* line 156, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__maxt::before {
+  content: "max: "; }
+
+/* line 159, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__maxt::after {
+  content: "ºC"; }
+
+/* line 162, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__mint {
+  color: #bc2929;
+  text-shadow: none; }
+
+/* line 166, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__mint::before {
+  content: "min: "; }
+
+/* line 169, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__mint::after {
+  content: "ºC"; }
+
+/* line 172, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__temp {
+  display: block;
+  font-size: 3rem;
+  line-height: 1; }
+
+/* line 177, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card__temp::after {
+  content: " ºC";
+  font-size: 2rem; }
+
+/*
+    * Añadimos modificaciones para los posibles diferentes
+    * fondos de ciudades
+    */
+/* line 186, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card--valencia {
+  background-image: url(../img/valencia.jpg); }
+
+/* line 190, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.card--mountainview {
+  background-image: url(../img/mv.jpg); }
+
+/*
+* Loader
+*/
+/* line 197, D:/CLIENTES/mejorandola/clases.desarrollo-web/Platzi-weather/scss/style.scss */
+.loader {
+  text-align: center;
+  padding: 1em; }
